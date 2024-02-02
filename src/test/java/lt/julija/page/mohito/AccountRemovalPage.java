@@ -1,4 +1,7 @@
 package lt.julija.page.mohito;
 
-public class AccountRemovalPage {
+import lt.julija.page.PageBase;
+
+public class AccountRemovalPage extends PageBase {
+
 }
