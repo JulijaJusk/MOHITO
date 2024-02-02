@@ -19,5 +19,13 @@ public class Locator {
             public static By paragraphReadAccountName = By
                     .xpath("//div[@data-testid='account-info-logged-true']//p");
         }
+
+        public static class AccountLogin {
+            public static By inputEmail = By.xpath("//input[@id='login[username]_id']");
+            public static By inputPassword = By.xpath("//input[@id='login[password]_id']");
+            public static By buttonLogin = By.xpath("//button[@data-selen='login-submit']");
+            public static By paragraphReadAccountName = By
+                    .xpath("//div[@data-testid='account-info-logged-true']//p");
+        }
     }
 }

@@ -24,8 +24,9 @@ public class Common {
         Driver.getDriver().get(url);
     }
 
-    public static void refreshPage() {
+    public static void refreshPage(int sec) {
         Driver.getDriver().navigate().refresh();
+        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(sec));
     }
 
     public static void quitDriver() {
