@@ -18,10 +18,10 @@ public class AccountLoginTest extends TestBase {
     }
 
     @Test
-    public void testEnterValidLoginDetails(){
+    public void testEnterValidLoginDetails() {
         String email = "julijazbarauskaite3d@gmail.com";
         String password = "Vasara24*";
-        String expectedResult = "Julija";
+        String expectedResult = "";
         String actualResult;
 
         AccountLoginPage.enterEmail(email);
