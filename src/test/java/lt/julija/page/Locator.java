@@ -16,7 +16,8 @@ public class Locator {
             public static By inputPassword = By.xpath("//input[@id='password_id']");
             public static By buttonCreateAccount = By
                     .xpath("//button[@data-selen='create-account-submit']");
-            public static By paragraphReadAccountName = By.xpath("//div[@data-testid='account-info-logged-true']//p");
+            public static By paragraphReadAccountName = By
+                    .xpath("//div[@data-testid='account-info-logged-true']//p");
         }
     }
 }
