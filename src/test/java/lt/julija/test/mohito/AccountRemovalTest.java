@@ -1,4 +1,12 @@
 package lt.julija.test.mohito;
 
-public class AccountRemovalTest {
+import lt.julija.test.TestBase;
+import org.testng.annotations.BeforeMethod;
+
+public class AccountRemovalTest extends TestBase {
+    @BeforeMethod
+    @Override
+    public void setUp() {
+
+    }
 }
