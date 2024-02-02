@@ -17,7 +17,7 @@ public class AccountRegistrationTest extends TestBase {
     }
 
     @Test
-    public void testEnterValidUserInformation(){
+    public void testEnterValidUserInformation() {
         String email = "julijazbarauskaite3d@gmail.com";
         String name = "Julija";
         String lastName = "Juskeviciene";
@@ -26,12 +26,11 @@ public class AccountRegistrationTest extends TestBase {
         String actualResult;
 
         AccountRegistrationPage.enterEmail(email);
-        AccountRegistrationPage.enterName (name);
+        AccountRegistrationPage.enterName(name);
         AccountRegistrationPage.enterLastName(lastName);
         AccountRegistrationPage.enterPassword(password);
         AccountRegistrationPage.clickOnButtonCreateAccount();
         actualResult = AccountRegistrationPage.readAccountName();
-
 
         Assert.assertTrue(
                 actualResult.contains(expectedResult),
