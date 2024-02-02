@@ -24,6 +24,10 @@ public class Common {
         Driver.getDriver().get(url);
     }
 
+    public static void refreshPage() {
+        Driver.getDriver().navigate().refresh();
+    }
+
     public static void quitDriver() {
         Driver.getDriver().quit();
     }
